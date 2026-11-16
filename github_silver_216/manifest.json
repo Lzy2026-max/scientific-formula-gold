@@ -1,0 +1,16 @@
+{
+  "dataset": "Frozen Silver diagnostic subset",
+  "record_count": 216,
+  "source_run_id": "ebook30_ocrseed_v2_seed2026081001",
+  "selection": "216 exact-aligned records from historical 251; 35 changed records excluded",
+  "categories": {
+    "公式树": 116,
+    "OCR": 61,
+    "M标签": 39
+  },
+  "file_key": "formula_id",
+  "human_review_id_key": "review_id",
+  "human_m_labels_note": "An empty list may mean pending human M adjudication; see human_m_status.",
+  "related_gold_count": 397,
+  "overlap_with_gold": 0
+}
