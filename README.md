@@ -1,5 +1,5 @@
 # Gold formula subset — frozen two-host run, 397 records
-
+The frozen full run and the 397-record human-reviewed Gold subset are archived on Zenodo: https://doi.org/10.5281/zenodo.24286096
 Run ID: `ebook30_ocrseed_v2_seed2026081001`. Two independent hosts produced matching final formula records, formula trees and cluster records by ID. This package contains the 397 manually reviewed machine-core records aligned to that frozen run.
 
 Of 417 prior review records, 383 were unchanged across versions. A new page-level review accepted 14 of the 34 changed records and excluded 20; `cross_version_review_34.csv` lists the decisions. Q1497's prior human transcription used `a` where the original page shows Greek `α`; its transcription is corrected here.
