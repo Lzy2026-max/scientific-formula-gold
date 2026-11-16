@@ -1,0 +1,35 @@
+﻿复核序号,formula_id,最终版状态,裁定,逐条理由
+R008,EBOOKF_2a38e93d4601c5d7593c4e4e,ambiguous_symbolic_call,不进入最终版Gold,原页与OCR、树相同，但新状态为ambiguous_symbolic_call，机器M为空，未进入最终机器核心。
+Q0003,EBOOKF_d5d0a441e2728dd2b7bf6ffe,parse_structure_suspicious,不进入最终版Gold,新OCR仍表达同一公式，但解析树退化为(* r 1 k cos k)，外层幂、三角函数和分式节点丢失，M为空。
+Q0071,EBOOKF_b15951fad28f5ee5f5501416,parse_structure_suspicious,不进入最终版Gold,原页为ln(1+e^δ)，新OCR误为绝对值包裹的n(1+e^δ)，树和M随之错误。
+Q0155,EBOOKF_822d75b923f095d47fd00faa,valid_for_core_stats,进入最终版Gold,粗体命令由\mathbf改为\bf；v、e、运算和上下标不变。
+Q0190,EBOOKF_13653ef4e427b7b66d0fbe09,valid_for_core_stats,进入最终版Gold,帽号与逆矩阵括号的TeX分组写法改变；等式链各项不变。
+Q0208,EBOOKF_0a4ffeaacdcf87c2a17cfea7,ocr_quality_suspicious,不进入最终版Gold,新OCR在等号后多出\O，触发ocr_quality_suspicious，M为空。
+Q0274,EBOOKF_26ab5dab8a666ff2fb044481,parse_structure_suspicious,不进入最终版Gold,新OCR的数学内容与原页相同，但解析树未保留λ_i/(λ_i+σ_n²/n)与η_i的结构，M为空。
+Q0305,EBOOKF_ea72b36ee2641f312ee21253,valid_for_core_stats,进入最终版Gold,分数与圆括号的TeX分组写法改变；数值、指数和运算不变。
+Q0390,EBOOKF_27379c7692e54a50d366702d,valid_for_core_stats,进入最终版Gold,等号两侧空白与逆矩阵括号写法改变；符号及运算不变。
+Q0442,EBOOKF_3d958b419a0537a1be2490ba,parse_structure_suspicious,不进入最终版Gold,新OCR的\frac{λ}2是原页λ/2的等价写法，但树退化，未保留yᵀK⁻¹y。
+Q0444,EBOOKF_3c713853ad4bae5c97239030,parse_structure_suspicious,不进入最终版Gold,原页为双曲正切的分式，新OCR丢失等号与整个分母，树错误。
+Q0508,EBOOKF_02d7c7b8ba4a1a76af5a7d7e,parse_structure_suspicious,不进入最终版Gold,新OCR把等号及后续内容放入异常underline命令，树把f(x)与xᵀ拆错，M为空。
+Q0633,EBOOKF_bb3bba1e1eddd8f6516ed53b,valid_for_core_stats,不进入最终版Gold,原页为AᵀA，新的\mathcal A识别及树中的mathcalA节点与原页不符，额外触发M02。
+Q0740,EBOOKF_6b86387257eb876d99798659,parse_structure_suspicious,不进入最终版Gold,原页立方项系数为1/3，新OCR读为1/ϑ，解析树和M失真。
+Q0808,EBOOKF_f9cbd51e5112a70f273a905f,valid_for_core_stats,进入最终版Gold,空白和末尾逗号变化；f=1/2+δ不变。
+Q0871,EBOOKF_14af13f4ecffff919d06674c,ocr_quality_suspicious,不进入最终版Gold,新OCR将等号和零误读为下划线附标并引入额外字符，树不忠实。
+Q1037,EBOOKF_a5fed48e7ad6ebb46b2a366c,valid_for_core_stats,不进入最终版Gold,原页关系符为=，新OCR及树改为恒等号≡；关系节点不忠实。
+Q1285,EBOOKF_36bc2497139c87f5281d7d02,valid_for_core_stats,进入最终版Gold,等号后空白和末尾逗号变化；u_t=Kx_t不变。
+Q1426,EBOOKF_59b3aacd695298253c427056,valid_for_core_stats,进入最终版Gold,分数外分组和末尾逗号变化；传递函数各因子不变。
+Q1427,EBOOKF_57e39e73514161f6f5092dbf,parse_structure_suspicious,不进入最终版Gold,新OCR可读作原式，但树将A₂、v₀的下标拆成独立因子，M为空。
+Q1497,EBOOKF_be4b36b677ac4d72af63d23f,valid_for_core_stats,进入最终版Gold,原页清楚显示a₂=α²+ω²；旧人工转写与旧OCR把α错写为a。新OCR和新树保留α，M01/M11/M12与人工结构一致；修正人工转写后接纳。
+Q1542,EBOOKF_f2d2c6e32480842bed0ad531,valid_no_target_pattern,不进入最终版Gold,原页、OCR和树仍为Ax=b，但新机器状态为valid_no_target_pattern且M为空，核心筛选与人工M不一致。
+Q1588,EBOOKF_a39093ea1673d18aac3d71d2,valid_no_target_pattern,不进入最终版Gold,原页、OCR和树仍为Aᵀλ=0，但新机器状态为valid_no_target_pattern且M为空，核心筛选与人工M不一致。
+Q1776,EBOOKF_cb1f10934bca6b7322665340,ocr_quality_suspicious,不进入最终版Gold,OCR和树与原页及旧版一致，但新状态ocr_quality_suspicious且M为空，未进入最终机器核心。
+Q1881,EBOOKF_1ba703f93c62b6955f863c58,parse_structure_suspicious,不进入最终版Gold,新OCR仅有空白变化，但树把带上下标、三角函数的方程压成少数原子节点，M为空。
+Q1891,EBOOKF_5475191723e9788789da8edd,ocr_quality_suspicious,不进入最终版Gold,新OCR引入多个错误underline及Σ，丢失原等式链，树和M错误。
+Q1968,EBOOKF_1b0629f7820d5d2c07e2eab7,valid_for_core_stats,进入最终版Gold,圆括号由\bigl/\bigr改为\left/\right；表达式不变。
+Q1974,EBOOKF_68babfe0784fcb8f15da4762,valid_for_core_stats,进入最终版Gold,省略号由\cdots改为\dots；各项、指数和括号不变。
+Q2056,EBOOKF_941a83821a8d715cb55968e5,valid_for_core_stats,进入最终版Gold,四个分量的分数外分组与句点变化；元组和各分子分母不变。
+Q2062,EBOOKF_ef5fa4bd11d7835c1278f469,valid_for_core_stats,进入最终版Gold,元组中的一个省略号由\ldots改为\dots；其余项及树不变。
+Q2117,EBOOKF_ee6afefd41e515fd61555c0e,parse_structure_suspicious,不进入最终版Gold,新OCR引入原页没有的Ω并把v读为υ，解析树退化，M为空。
+Q2121,EBOOKF_c200ed3cf6ebb04076690351,valid_for_core_stats,不进入最终版Gold,"原页是A_{1,k}、A_{m,k}，新OCR变为花体A且树拆出下标因子，额外触发M03。"
+Q2208,EBOOKF_5766918be51626be38abb3be,valid_for_core_stats,进入最终版Gold,等号周围空白和末尾逗号变化；f(x)=2x+1不变。
+Q2216,EBOOKF_d56a8d2f0980274450a1e805,valid_for_core_stats,进入最终版Gold,分数周围空白命令变化；π及分母1+B²不变。
