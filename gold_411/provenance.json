@@ -1,0 +1,19 @@
+{
+  "release": "gold411_2026-11-21",
+  "source_run_id": "ebook30_ocrseed_v2_seed2026081001",
+  "base_release": "gold397_frozen_2026-11-16",
+  "base_records": 397,
+  "added_records": 14,
+  "total": 411,
+  "distinct_formula_ids": 411,
+  "distinct_trees": 399,
+  "books": 18,
+  "pages": 340,
+  "reviewer": "Lzy",
+  "review_method": "single-person review; no cross-review",
+  "added_source": "14 hard negatives from the Silver B-layer M-label review; machine labels reviewed as correct, machine tree fidelity passed, core status valid_for_core_stats",
+  "integrity": "no formula_id or tree collision with the base 397 records; all 411 formula_id unique",
+  "relationship": "submission set = base 397 + 14 added; the 14 were removed from the Silver set (792 records), so no formula_id overlap with Silver",
+  "cross_set_note": "3 generic formula trees (A x=b, x=A^{-1}b, y=A x+v) also occur in the Silver 792 records, from different books/pages and independent typesetting; not duplicates of the same record. For strict leakage isolation, group by tree.",
+  "sampling_note": "Gold is a directed human-review product; 411 is not a denominator for overall accuracy. Source PDFs and page images are not distributed."
+}

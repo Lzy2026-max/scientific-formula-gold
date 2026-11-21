@@ -1,0 +1,20 @@
+{
+  "version": "gold411_2026-11-21",
+  "format": "JSON Lines UTF-8",
+  "record_count": 411,
+  "unique_key": "formula_id",
+  "source_run_id": "ebook30_ocrseed_v2_seed2026081001",
+  "review_id": "review sequence number; R for the initial batch, Q for the machine core candidate queue",
+  "human_transcription_latex": "formula LaTeX checked symbol by symbol against the page",
+  "human_m_labels": "label list verified against the M01–M12 rules",
+  "human_m_node_witness": "optional: human-identified M-label node witness; present only on some records",
+  "machine_record_fully_matches_gold": "machine OCR, tree, labels and core status all agree with the human review",
+  "bbox_200dpi_px": "original detection box [x0,y0,x1,y1], 200dpi pixel coordinates",
+  "pdf_page_1based": "PDF page number, 1-based",
+  "source_pdf_sha256": "SHA-256 of the source PDF; the source PDF is not distributed",
+  "gold_accepted": "whether the record is included in the Gold submission set",
+  "frozen_version_review_outcome": "review outcome of the frozen version (accepted)",
+  "review_cohort": "review batch through which the record entered Gold",
+  "review_method": "single-person review, no cross-review",
+  "reviewer": "reviewer"
+}

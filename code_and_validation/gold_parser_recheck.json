@@ -1,0 +1,10 @@
+{
+  "records": 411,
+  "tree_matches": 411,
+  "target_matches": 411,
+  "tags_match": 411,
+  "human_tags_match": 411,
+  "python": "3.14.6",
+  "formula_engine_sha256": "a62c10495e8f8e7304990579dbd2de12222324439cb748e7e4f5475bbf41dda9",
+  "scope": "parse and rule recomputation for all 411 Gold records from archived OCR text; no OCR rerun or independent human validation"
+}

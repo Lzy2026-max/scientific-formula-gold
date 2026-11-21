@@ -1,0 +1,55 @@
+{
+  "split_version": "silver_heldout_2026-11-22",
+  "source_records": 792,
+  "eligible_train_pool": 351,
+  "eligible_eval_pool": 325,
+  "ratio": 0.2,
+  "method": "deterministic group-aware, book-stratified holdout: target 20% of evaluation-reference records per source book; tree_duplicate_group assignments are kept whole; test records are drawn only from usable_for_eval",
+  "test_records": 68,
+  "train_records": 283,
+  "test_books": 20,
+  "train_books": 19,
+  "test_eval_records": 68,
+  "train_eval_records": 257,
+  "train_only_records_in_train": 26,
+  "test_per_book": {
+    "04_Linear_Algebra_Done_Right_4e.pdf": 4,
+    "06_OpenStax_Introductory_Statistics_2e.pdf": 1,
+    "07_Grinstead_Snell_Introduction_to_Probability.pdf": 4,
+    "08_Introduction_to_Statistical_Learning_Python.pdf": 1,
+    "09_The_Elements_of_Statistical_Learning_2e.pdf": 2,
+    "10_Statistical_Learning_with_Sparsity.pdf": 1,
+    "14_OpenStax_Chemistry_2e.pdf": 1,
+    "15_OpenStax_Chemistry_Atoms_First_2e.pdf": 1,
+    "18_Structure_and_Interpretation_of_Computer_Programs_JS.pdf": 1,
+    "20_Mining_of_Massive_Datasets.pdf": 2,
+    "21_Feedback_Systems.pdf": 12,
+    "22_Information_Theory_Inference_and_Learning_Algorithms.pdf": 6,
+    "23_Mathematics_for_Machine_Learning.pdf": 4,
+    "24_Convex_Optimization.pdf": 12,
+    "25_Introduction_to_Applied_Linear_Algebra.pdf": 6,
+    "26_Gaussian_Processes_for_Machine_Learning.pdf": 1,
+    "27_Reinforcement_Learning_An_Introduction_2e.pdf": 1,
+    "28_Dive_into_Deep_Learning.pdf": 3,
+    "29_Foundations_of_Data_Science.pdf": 4,
+    "30_Finite_Difference_Computing_with_PDEs.pdf": 1
+  },
+  "duplicate_groups_in_test": [
+    "DT01",
+    "DT10",
+    "DT11"
+  ],
+  "duplicate_groups_in_train": [
+    "DT08"
+  ],
+  "checks": {
+    "test_subset_of_eval": true,
+    "train_test_disjoint": true,
+    "train_plus_test_equals_eligible_pool": true,
+    "no_tree_group_split": true
+  },
+  "files": {
+    "silver_test_heldout_68.jsonl": "a2d8f9dc2bb124cb09a5d70dc175c29fe1c4c054ef6f8a91e1772a95ddc58591",
+    "silver_train_heldout_283.jsonl": "ece3c5539a35eb8b06efee7444782057ecc79f581d2214ecab2e2440a50edbf4"
+  }
+}
