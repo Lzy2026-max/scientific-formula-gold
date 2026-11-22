@@ -1,0 +1,47 @@
+{
+  "release": "core_review_2289_2026-11-23",
+  "source_run_id": "ebook30_ocrseed_v2_seed2026081001",
+  "total": 2289,
+  "distinct_formula_ids": 2289,
+  "book_titles": 26,
+  "book_page_pairs": 1576,
+  "composition": {
+    "signed_2026-11-15": 1812,
+    "queue_blank_backfill_2026-11-23": 231,
+    "core_only_added_2026-11-23": 246
+  },
+  "signed": "all 2,289 records signed by Lzy; 1,812 on 2026-11-12 to 2026-11-15, 477 on 2026-11-23",
+  "first_failure_stage": {
+    "none": 448,
+    "formula_tree": 538,
+    "candidate_identification": 565,
+    "region_completeness": 400,
+    "ocr": 222,
+    "m_label": 73,
+    "target_scope": 26,
+    "m_label_pending": 14,
+    "duplicate": 3
+  },
+  "item_review_2026_11_23": {
+    "records": 477,
+    "changed": 109,
+    "unchanged": 368,
+    "confidence_high": 440,
+    "confidence_medium": 37
+  },
+  "scope_rulings": {
+    "Q0173": "table cell constant (TABLE 12.3); no error, excluded from dataset scope",
+    "Q0284": "table cell constant (TABLE 16.3); no error, excluded from dataset scope",
+    "Q2510": "figure annotation M/(6d); no error, excluded from dataset scope; the machine transcription reads lambda for M",
+    "Q2520": "English quantifier 'for all real' in the tree; not counted as a tree error; no error, included in dataset scope"
+  },
+  "cross_set_note": "The pool covers the whole frozen core layer, so it contains all 411 Gold records and 736 of the 792 Silver records. The remaining 56 Silver records are outside the frozen core layer and do not appear in this pool. Counts describe this directed-review pool and are not a denominator for overall accuracy.",
+  "language": "English rendering of the signed workbook. Sheet names, headers and controlled vocabularies are English; free-text review evidence is kept verbatim in Chinese in fields whose name ends in _zh. Path fields point to review packages on the production machine that are not distributed.",
+  "integrity": "2,289 rows; 2,289 unique formula_id; failure_stage values restricted to the nine defined stages; 477 item-level records carry a confidence value, 1,812 do not",
+  "sampling_note": "Directed review of the frozen core layer, not a random sample. Source PDFs and page images are not distributed.",
+  "overlap_counts": {
+    "gold_411": 411,
+    "silver_792": 736,
+    "silver_outside_pool": 56
+  }
+}
