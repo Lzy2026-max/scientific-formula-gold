@@ -1,29 +1,60 @@
-{
-  "purpose": "Identity and acquisition record for the OCR weights and Python environments used by the frozen run, published alongside the frozen run package without modifying it.",
-  "frozen_run_id": "ebook30_ocrseed_v2_seed2026081001",
-  "frozen_engine_sha256": "a62c10495e8f8e7304990579dbd2de12222324439cb748e7e4f5475bbf41dda9",
-  "ocr_engine": "pix2tex.LatexOCR",
-  "ocr_dependency_constraint": "pix2tex>=0.1.4",
-  "ocr_weight_files": [
-    "pix2tex/model/checkpoints/weights.pth",
-    "pix2tex/model/checkpoints/image_resizer.pth"
-  ],
-  "ocr_weight_acquisition": "The two weight files are installed inside the pix2tex package directory (<site-packages>/pix2tex/model/checkpoints/) and are downloaded by pix2tex on first use. They are not redistributed in this package.",
-  "ocr_weight_combined_sha256_definition": "SHA-256 over the weight files sorted by full path: for each file, update the digest with the file name encoded as UTF-8, then with the hex SHA-256 of the file encoded as ASCII. Implementation: common/formula_kb_production/runtime_fingerprint.py, function combined_sha256().",
-  "ocr_weight_combined_sha256": "a63d9141c53d266cb682fb5a8bd83bd5cbe283145e0e78ebdc0f895195a1dfaa",
-  "ocr_weight_combined_sha256_status": "Value recorded for the frozen run. It is the combined SHA-256 of the two pix2tex weight files, computed by ocr_weight_combined_sha256_definition. The weight files themselves are not redistributed, so reproducing the value requires a local pix2tex installation that ships the same weights.pth and image_resizer.pth; apply the same rule to those two files.",
-  "python_environments": {
-    "first_run": "3.10.8",
-    "cross_host_reproduction": "3.10.20",
-    "gold_recomputation": "3.14.6"
-  },
-  "gold_recomputation": {
-    "scope": "all 411 Gold records",
-    "input": "archived OCR text only; OCR was not re-run",
-    "checks": "formula tree, analysis target, machine M-labels, human M-labels",
-    "result": "411/411 on each check, 0 mismatches",
-    "script": "gold_parser_recheck.py (--gold, --engine-dir, --out-dir)",
-    "results": "gold_parser_recheck.json, gold_parser_recheck.csv"
-  },
-  "data_change_note": "Adding this file does not change any record, transcription, tree, label or verdict in the dataset, and does not change the frozen run package."
-}
+  {
+    "purpose": "Identity and acquisition record for the OCR weights and Python environments used by the frozen run, published alongside the frozen run
+  package without modifying it.",
+    "frozen_run_id": "ebook30_ocrseed_v2_seed2026081001",
+    "frozen_engine_sha256": "a62c10495e8f8e7304990579dbd2de12222324439cb748e7e4f5475bbf41dda9",
+    "ocr_engine": "pix2tex.LatexOCR",
+    "ocr_dependency_constraint": "pix2tex==0.1.4",
+    "ocr_weight_files": [
+      "pix2tex/model/checkpoints/weights.pth",
+      "pix2tex/model/checkpoints/image_resizer.pth"
+    ],
+    "ocr_weight_acquisition": "The two weight files are installed inside the pix2tex package directory (<site-packages>/pix2tex/model/checkpoints/) and are
+  downloaded by pix2tex on first use. They are not redistributed in this package.",
+    "ocr_weight_combined_sha256_definition": "SHA-256 over the weight files sorted by full path: for each file, update the digest with the file name encoded
+  as UTF-8, then with the hex SHA-256 of the file encoded as ASCII. Implementation: common/formula_kb_production/runtime_fingerprint.py, function
+  combined_sha256().",
+    "ocr_weight_combined_sha256": "4122e5a082abd2070018c7234b7ea101e0e04d1073c456e5761468a04af5dd76",
+    "ocr_weight_combined_sha256_status": "Recomputed on the reproduction host with runtime_fingerprint.combined_sha256(checkpoint_files()); identical to the
+  ocr_checkpoint_sha256 recorded by the frozen run in merge_summary.json. The two weight files are not redistributed, so reproducing the value requires a
+  local pix2tex 0.1.4 installation.",
+    "host_hardware": {
+      "os": "Ubuntu 22.04",
+      "cpu": "Intel Xeon Platinum 8352V @ 2.10 GHz, 16 vCPU per host",
+      "gpu": "NVIDIA GeForce RTX 4090 (24 GB) x 1 per host",
+      "gpu_workers_per_host": 3
+    },
+    "software_stack": {
+      "observed_on": "reproduction host, 2026-11-22",
+      "python": "3.10.8",
+      "pytorch": "2.1.2+cu118",
+      "torchvision": "0.16.2+cu118",
+      "cuda_build": "11.8",
+      "nvidia_driver": "595.71.05",
+      "pix2tex": "0.1.4",
+      "pymupdf": "1.28.2",
+      "numpy": "1.26.4",
+      "pillow": "10.3.0",
+      "latex2sympy2": "1.9.1",
+      "munch": "4.0.0",
+      "screeninfo": "0.8.1"
+    },
+    "python_environments": {
+      "first_run": "3.10.8",
+      "cross_host_reproduction": "3.10.8",
+      "gold_recomputation": "3.14.6"
+    },
+    "gold_recomputation": {
+      "scope": "all 411 Gold records",
+      "input": "archived OCR text only; OCR was not re-run",
+      "checks": "formula tree, analysis target, machine M-labels, human M-labels",
+      "result": "411/411 on each check, 0 mismatches",
+      "script": "gold_parser_recheck.py (--gold, --engine-dir, --out-dir)",
+      "results": "gold_parser_recheck.json, gold_parser_recheck.csv"
+    },
+    "correction_note": "Corrected on 2026-11-22: ocr_weight_combined_sha256 now matches the ocr_checkpoint_sha256 recorded by the frozen run in
+  merge_summary.json, recomputed on the reproduction host with runtime_fingerprint.combined_sha256(checkpoint_files()); python_environments records the
+  verified Python 3.10.8 for both hosts. No record, transcription, tree, label or verdict is affected.",
+    "data_change_note": "Adding this file does not change any record, transcription, tree, label or verdict in the dataset, and does not change the frozen
+  run package."
+  }
