@@ -6,7 +6,11 @@
   "engine_sha256": "a62c10495e8f8e7304990579dbd2de12222324439cb748e7e4f5475bbf41dda9",
   "reviewer": "Lzy",
   "review_method": "single-person item-by-item verification of region, OCR, transcription, tree and M-labels; no cross-review",
-  "review_dates": ["2026-11-12", "2026-11-13", "2026-11-15"],
+  "review_dates": [
+    "2026-11-12",
+    "2026-11-13",
+    "2026-11-15"
+  ],
   "finalized": "2026-11-21",
   "total": 792,
   "books": 22,
@@ -19,8 +23,6 @@
   },
   "usable_for_train": 351,
   "usable_for_eval": 325,
-  "gold_records_moved_out": 14,
-  "gold_destination": "the submitted Gold set (411 records)",
   "empty_label_negatives": 2,
   "duplicate_tree_groups": 11,
   "duplicate_tree_records": 24,
@@ -44,6 +46,6 @@
       "no_tree_group_split": true
     }
   },
-  "sampling_note": "records come from an error-enriched candidate pool; 14 hard negatives whose machine labels were reviewed as correct are published in the Gold set, leaving the 792 records in this package. Any proportion describes this review subset only and must not be extrapolated to overall accuracy.",
+  "sampling_note": "records come from an error-enriched candidate pool; any proportion describes this review subset only and must not be extrapolated to overall accuracy.",
   "distribution_note": "source PDFs and page images are not distributed; use source_file, pdf_page_1based and source_pdf_sha256 to re-check the underlying pages."
 }

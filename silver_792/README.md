@@ -48,3 +48,7 @@ A formula dataset drawn from an error-enriched review pool across 22 textbooks (
 - Source PDFs and page images are not distributed. `source_file`, `pdf_page_1based` and `source_pdf_sha256` allow the underlying page to be re-checked against the original edition.
 - Single-person review; no cross-review. Every record's transcription, tree and label set was verified item by item by the reviewer; 186 records additionally carry an explicit label-verdict note.
 - No `formula_id` is shared with the Gold set (411 records). Three generic formula trees (`A x=b`, `x=A^{-1}b`, `y=A x+v`) also occur in Gold, but from different books/pages; they are independent records, not duplicates across the two sets.
+
+## License
+
+Data license: CC BY 4.0. See the `LICENSE` file at the repository root. Code in the sibling `code_and_validation/` directory is licensed under MIT.

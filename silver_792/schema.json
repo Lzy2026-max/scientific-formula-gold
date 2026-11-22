@@ -3,7 +3,7 @@
   "format": "JSON Lines UTF-8",
   "record_count": 792,
   "unique_key": "formula_id",
-  "id": "review_id is the review sequence number and Q the machine candidate queue number; formula_id is the formula unique key, matching machine_formula_records.jsonl and machine_formula_trees.jsonl across files",
+  "id_note": "review_id is the review sequence number and Q the machine candidate queue number; formula_id is the formula unique key, matching machine_formula_records.jsonl and machine_formula_trees.jsonl across files",
   "source_file": "source PDF filename; the source PDF is not distributed",
   "source_pdf_sha256": "SHA-256 of the source PDF, for identifying the same edition",
   "pdf_page_1based": "PDF page number, 1-based",
@@ -38,5 +38,10 @@
   "review_date": "review date",
   "review_method": "review method; all records are single-person item-by-item verification, no cross-review",
   "source_run_id": "frozen run ID",
-  "engine_sha256": "SHA-256 of the frozen engine file used for parsing and labeling"
+  "engine_sha256": "SHA-256 of the frozen engine file used for parsing and labeling",
+  "formula_id": "formula unique key; matches machine_formula_records.jsonl and machine_formula_trees.jsonl, and never collides with a Gold formula_id",
+  "review_id": "review sequence number; R for the initial batch, Q for the machine core candidate queue",
+  "source_id": "book identifier; matches book_id in the source catalogue",
+  "source_title": "book title as recorded in the source catalogue",
+  "source_title_zh": "book title as recorded in Chinese in the source catalogue"
 }
