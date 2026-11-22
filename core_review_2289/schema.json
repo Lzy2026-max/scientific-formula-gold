@@ -5,7 +5,7 @@
   "unique_key": "formula_id",
   "source_run_id": "ebook30_ocrseed_v2_seed2026081001",
   "language": "All field values are English except review_note_zh, which holds the reviewer's original Chinese evidence text.",
-  "workbook": "core_review_2289.xlsx: 7 sheets (review_pool, notes, stage_statistics, coverage_check, frozen_recheck, item_review, scope_rulings)",
+  "workbook": "core_review_2289.xlsx: 50 columns, 7 sheets (review_pool, notes, stage_statistics, coverage_check, frozen_recheck, item_review, scope_rulings)",
   "fields": {
     "review_id": "queue identifier used across the review workbook (Q + number)",
     "formula_id": "identifier of the formula record in the frozen run",
@@ -37,7 +37,8 @@
     "machine_label_difference": "difference between machine labels and the checked labels",
     "review_note_zh": "evidence and reasoning, reviewer's original Chinese text",
     "frozen_core_eligibility": "core eligibility in the frozen run",
-    "book_title": "book title as recorded in the queue",
+    "book_name": "canonical book title, mapped from source_file; use this field to group, stratify or split",
+    "book_title_as_recorded": "book title as recorded in the review queue; for three books this is PDF metadata rather than a title (21_Feedback_Systems.pdf: print.dvi; 09_The_Elements_of_Statistical_Learning_2e.pdf: Untitled; 20_Mining_of_Massive_Datasets.pdf: book0.dvi)",
     "source_file": "source PDF filename; the PDF is not distributed",
     "pdf_page": "PDF page number as stored in the queue",
     "candidate_number": "candidate sequence number on the page",

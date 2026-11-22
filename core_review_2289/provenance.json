@@ -3,7 +3,7 @@
   "source_run_id": "ebook30_ocrseed_v2_seed2026081001",
   "total": 2289,
   "distinct_formula_ids": 2289,
-  "book_titles": 26,
+  "books": 26,
   "book_page_pairs": 1576,
   "composition": {
     "signed_2026-11-15": 1812,
