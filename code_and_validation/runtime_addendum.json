@@ -11,7 +11,7 @@
   "ocr_weight_acquisition": "The two weight files are installed inside the pix2tex package directory (<site-packages>/pix2tex/model/checkpoints/) and are downloaded by pix2tex on first use. They are not redistributed in this package.",
   "ocr_weight_combined_sha256_definition": "SHA-256 over the weight files sorted by full path: for each file, update the digest with the file name encoded as UTF-8, then with the hex SHA-256 of the file encoded as ASCII. Implementation: common/formula_kb_production/runtime_fingerprint.py, function combined_sha256().",
   "ocr_weight_combined_sha256": "a63d9141c53d266cb682fb5a8bd83bd5cbe283145e0e78ebdc0f895195a1dfaa",
-  "ocr_weight_combined_sha256_status": "Value as recorded for the frozen run. It is not re-derivable from the files published in the frozen run package, because the weight files themselves are not redistributed; recomputing it requires a local pix2tex installation with the same weights.",
+  "ocr_weight_combined_sha256_status": "Value recorded for the frozen run. It is the combined SHA-256 of the two pix2tex weight files, computed by ocr_weight_combined_sha256_definition. The weight files themselves are not redistributed, so reproducing the value requires a local pix2tex installation that ships the same weights.pth and image_resizer.pth; apply the same rule to those two files.",
   "python_environments": {
     "first_run": "3.10.8",
     "cross_host_reproduction": "3.10.20",
